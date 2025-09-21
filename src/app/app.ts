@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from "./navigation-component/navigation-component";
 import { CardComponent } from "./card-component/card-component";
 import { MiddleComponent } from "./middle-component/middle-component";
-import { ButtonModule } from 'primeng/button';
+import { Home } from "./home/home";
+import { FooterComponent } from "./footer-component/footer-component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavigationComponent, CardComponent, MiddleComponent, ButtonModule],
+  imports: [RouterOutlet, NavigationComponent, CardComponent, MiddleComponent, Home, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
